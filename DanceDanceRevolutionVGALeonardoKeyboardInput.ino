@@ -8,9 +8,9 @@ typedef struct
   char inputCharacter;
 }Pad;
 
-const int padLength = 4;
 //declaring button pins
 Pad pads[] = {{2,HIGH,'a'},{3,HIGH,'s'},{4,HIGH,'d'},{5,HIGH,'w'}};
+const int padLength = sizeof(pads) / sizeof(pads[0]);
 
 
 
